@@ -11,6 +11,9 @@ export default Route.extend({
       console.log(example)
       example.destroyRecord()
         .then(() => this.transitionTo('examples'))
+    },
+    saveExample (example) {
+      example.save()
     }
   }
 })

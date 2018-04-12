@@ -7,6 +7,7 @@ export default Component.extend({
   actions: {
     createExample () {
       this.sendAction('create', this.get('newExample'))
+      this.set('newExample.text', '') // get rid of text field
     }
   }
 })
