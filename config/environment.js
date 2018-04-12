@@ -3,10 +3,11 @@
 module.exports = function (environment) {
   'use strict';
   const ENV = {
-    modulePrefix: 'ga-wdi-boston.ember-auth',
+    modulePrefix: 'emberdeploypractice',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    apiHost: 'http://localhost:4741/',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -38,7 +39,7 @@ module.exports = function (environment) {
 
   if (environment === 'test') {
     // Testem prefers this...
-    ENV.rootUrl = '/';
+    ENV.rootUrl = '/emberdeploypractice';
     ENV.locationType = 'none';
 
     // keep test console output quieter
